@@ -1,7 +1,7 @@
 FROM openjdk:8-jre
 
 # Presto version will be passed in at build time
-ARG PRESTO_VERSION
+ARG PRESTO_VERSION=0.251
 
 # Set the URL to download
 ARG PRESTO_BIN=https://repo1.maven.org/maven2/com/facebook/presto/presto-server/${PRESTO_VERSION}/presto-server-${PRESTO_VERSION}.tar.gz
